@@ -16,7 +16,7 @@
 // DRY - Don't Repeat Yourself 
 
 
-var wordBank = ["elephants", "lions", "cows", "sheep", "giraffes", "rabbits", "monkeys", "birds", "frogs", "penguins"];
+var wordBank = ["elephants", "lions", "zebras", "rhinos", "giraffes", "hippos", "monkeys", "birds", "frogs", "penguins"];
 var randomWord;
 var wins = 0;
 var losses = 0;
