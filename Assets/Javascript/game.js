@@ -25,6 +25,7 @@ var dashWord;
 var referenceWord;
 var dashArray;
 var previouslyGuessedLetters;
+var audio = new Audio('./Assets/Sounds/Short_triumphal_fanfare-John_Stracke-815794903.wav')
 
 
 function startGame() {
@@ -66,10 +67,11 @@ function displayToUser() {
 }
 
 
-document.onkeyup = function (bacon) {
-    // console.log(bacon);
-    var userGuess = bacon.key;
-    console.log(userGuess)
+document.onkeyup = function (letterGuess) {
+    // console.log(letterGuess);
+    var userGuess = letterGuess.key;
+    console.log(userGuess);
+    
 
     checkGuess(userGuess);
 
@@ -78,6 +80,7 @@ document.onkeyup = function (bacon) {
 function checkWinLoss(){
     if(referenceWord.join("") == dashArray.join("")){
         wins++;
+        audio.play();
       return startGame();
     }
 
