@@ -1,19 +1,20 @@
-// We need a word bank of words for the user to guess
-// We can probably use an array
-// We probably want to randomize what word is selected to be guessed
+// Need a word bank of words for the user to guess - Array
 
-// We need to turn the randomly selected word, into an array of dashes to display to the html for the user to see
+// Randomize what word is selected to be guessed
 
-// We need to create an onkeyup/onkeydown event listener for the user to guess the letters in the hidden word
+// Turn the randomly selected word into an array of dashes to display to the html for the user to see
 
-// We need a way to track the letters guessed, and also if the guessed letters are in the hidden word
+// Create an onkeyup/onkeydown event listener for the user to guess the letters in the hidden word
 
-// We need to keep track of wins, losses, and remaining guesses
+// Track the letters guessed, and also if the guessed letters are in the hidden word
 
-// We need a function to check if the user has won, lost or needs to contiue
+// Track of wins, losses, and remaining guesses
 
-// We need to continually display the game stats to the screen
-// DRY - Don't Repeat Yourself 
+// Write a function to check if the user has won, lost or needs to contiue
+
+// Continually display the game stats to the screen
+
+// DRY - Don't Repeat Yourself - Don't Repeat Yourself - Don't Repeat Yourself  HaHaHa!!!
 
 
 var wordBank = ["elephants", "lions", "zebras", "rhinos", "giraffes", "hippos", "monkeys", "birds", "frogs", "penguins"];
