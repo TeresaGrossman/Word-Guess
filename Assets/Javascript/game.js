@@ -72,24 +72,24 @@ document.onkeyup = function (letterGuess) {
     // console.log(letterGuess);
     var userGuess = letterGuess.key;
     console.log(userGuess);
-    
+
 
     checkGuess(userGuess);
 
 }
 
-function checkWinLoss(){
-    if(referenceWord.join("") == dashArray.join("")){
+function checkWinLoss() {
+    if (referenceWord.join("") == dashArray.join("")) {
         wins++;
         audio.play();
-      return startGame();
+        return startGame();
     }
 
-    if(remainingGuesses < 1){
+    if (remainingGuesses < 1) {
         losses++;
-       return startGame();
+        return startGame();
     }
-    
+
 }
 
 function checkGuess(letter) {
@@ -100,7 +100,7 @@ function checkGuess(letter) {
                 dashArray[y] = letter;
             }
         }
-        
+
         displayToUser();
 
     }
